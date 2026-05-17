@@ -221,4 +221,4 @@ Ce projet est un **démonstrateur portfolio**. Les données sont synthétiques, 
 
 ## Auteur
 
-Projet développé dans le cadre d'une recherche de premier emploi en **Data Engineering / Data Science**, avec une spécialisation sur les secteurs banque et assurance.
+OUCHCHEN OMAR - ouchcheno@gmailcom
