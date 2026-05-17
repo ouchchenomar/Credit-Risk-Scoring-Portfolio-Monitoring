@@ -1,0 +1,44 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# ── Environnements virtuels ───────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Tests & coverage ──────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Données générées (régénérées par python -m src.run_pipeline) ──────────────
+data/raw/*.csv
+data/processed/*.csv
+# data/sample/ est versionné (100 lignes d'exemple pour les utilisateurs GitHub)
+
+# ── Modèles entraînés (binaires, régénérés par le pipeline) ──────────────────
+models/*.pkl
+models/*.json
+models/*.csv
+
+# ── Documents personnels ──────────────────────────────────────────────────────
+*.pdf
+
+# ── IDE & OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+.env.*
+secrets.yaml
+

@@ -1,0 +1,32 @@
+# Données et modèles locaux (générés dans les volumes Docker)
+data/raw/
+data/processed/
+data/sample/
+models/
+
+# Environnements virtuels et caches Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# IDE et outils locaux
+.vscode/
+.idea/
+*.egg-info/
+
+# Git
+.git/
+.gitignore
+
+# Notebooks (non nécessaires dans le conteneur)
+notebooks/
+
+# Documentation source
+docs/
+
+# Fichiers OS
+.DS_Store
+Thumbs.db

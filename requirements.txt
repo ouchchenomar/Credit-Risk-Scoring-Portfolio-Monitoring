@@ -1,0 +1,20 @@
+# Core data & ML
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+joblib>=1.3
+
+# Dashboard
+streamlit>=1.35
+plotly>=5.20
+
+# Explicabilité SHAP (conformité RGPD Art. 22 / EBA)
+shap>=0.44.0
+
+# API REST temps-réel
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+
+# Tests unitaires
+pytest>=8.0.0
+httpx>=0.27.0

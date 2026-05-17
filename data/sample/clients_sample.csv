@@ -1,0 +1,101 @@
+client_id,age_group,revenu_mensuel,ville,secteur_activite,anciennete_emploi
+C00001,18-25,7242,Agadir,Services,5.3
+C00002,26-35,3456,Agadir,Industrie,7.3
+C00003,60+,9253,Casablanca,Salarie prive,4.3
+C00004,36-45,10273,Rabat,Commerce,3.9
+C00005,26-35,2200,Tanger,Salarie prive,5.9
+C00006,18-25,2992,Casablanca,Fonction publique,0.0
+C00007,36-45,6570,Fes,Salarie prive,7.4
+C00008,18-25,5146,Casablanca,Services,5.5
+C00009,36-45,6068,Casablanca,Salarie prive,5.7
+C00010,46-60,3831,Agadir,Independant,9.3
+C00011,36-45,9934,Casablanca,Etudiant,0.0
+C00012,26-35,9394,Oujda,Independant,0.0
+C00013,18-25,6351,Casablanca,Salarie prive,6.6
+C00014,18-25,11384,Casablanca,Services,5.5
+C00015,36-45,7920,Casablanca,Independant,6.2
+C00016,46-60,3818,Casablanca,Fonction publique,3.7
+C00017,26-35,7501,Rabat,Independant,8.2
+C00018,36-45,3614,Casablanca,Services,9.2
+C00019,36-45,9928,Marrakech,Commerce,7.4
+C00020,18-25,5958,Agadir,Commerce,4.5
+C00021,26-35,5532,Rabat,Fonction publique,0.0
+C00022,26-35,4211,Casablanca,Salarie prive,8.6
+C00023,36-45,11997,Rabat,Industrie,10.4
+C00024,36-45,5625,Tanger,Salarie prive,8.1
+C00025,46-60,4839,Marrakech,Fonction publique,2.0
+C00026,46-60,5046,Casablanca,Fonction publique,8.2
+C00027,46-60,8207,Marrakech,Salarie prive,8.9
+C00028,60+,7488,Rabat,Fonction publique,11.7
+C00029,46-60,7685,Casablanca,Independant,2.0
+C00030,46-60,7762,Casablanca,Fonction publique,4.6
+C00031,46-60,19889,Oujda,Salarie prive,8.5
+C00032,46-60,4897,Casablanca,Services,5.7
+C00033,46-60,4621,Casablanca,Etudiant,1.0
+C00034,60+,3914,Casablanca,Fonction publique,7.2
+C00035,36-45,8594,Marrakech,Fonction publique,7.8
+C00036,36-45,11395,Rabat,Salarie prive,5.9
+C00037,36-45,5752,Casablanca,Salarie prive,6.4
+C00038,46-60,3858,Rabat,Fonction publique,4.5
+C00039,36-45,3891,Fes,Agriculture,11.4
+C00040,46-60,8759,Casablanca,Industrie,1.9
+C00041,46-60,9217,Agadir,Fonction publique,3.2
+C00042,60+,8256,Casablanca,Etudiant,5.5
+C00043,26-35,4247,Casablanca,Fonction publique,9.0
+C00044,46-60,6958,Oujda,Salarie prive,0.0
+C00045,46-60,6530,Tanger,Fonction publique,0.3
+C00046,60+,6907,Rabat,Salarie prive,0.0
+C00047,46-60,9890,Tanger,Services,5.6
+C00048,36-45,6926,Marrakech,Fonction publique,1.0
+C00049,36-45,8896,Rabat,Independant,4.0
+C00050,26-35,6356,Tanger,Fonction publique,8.1
+C00051,60+,7180,Tanger,Services,2.9
+C00052,26-35,8666,Casablanca,Independant,6.4
+C00053,46-60,2748,Marrakech,Commerce,4.3
+C00054,46-60,5137,Rabat,Salarie prive,8.2
+C00055,36-45,4728,Casablanca,Services,7.4
+C00056,26-35,4310,Oujda,Commerce,2.7
+C00057,26-35,5264,Marrakech,Salarie prive,4.8
+C00058,46-60,13936,Marrakech,Services,9.7
+C00059,36-45,3804,Marrakech,Salarie prive,7.1
+C00060,18-25,10431,Marrakech,Fonction publique,0.0
+C00061,46-60,2427,Casablanca,Commerce,8.1
+C00062,26-35,5094,Oujda,Fonction publique,1.2
+C00063,46-60,6698,Marrakech,Commerce,11.2
+C00064,26-35,8454,Fes,Salarie prive,9.6
+C00065,26-35,9056,Rabat,Salarie prive,6.7
+C00066,18-25,9474,Casablanca,Salarie prive,6.1
+C00067,36-45,5055,Casablanca,Salarie prive,4.7
+C00068,36-45,4749,Rabat,Agriculture,8.2
+C00069,46-60,9817,Casablanca,Commerce,4.0
+C00070,36-45,5513,Fes,Commerce,6.4
+C00071,26-35,3036,Agadir,Fonction publique,9.0
+C00072,26-35,3284,Casablanca,Independant,3.3
+C00073,26-35,3693,Rabat,Salarie prive,3.0
+C00074,60+,8050,Fes,Salarie prive,0.7
+C00075,26-35,6623,Casablanca,Independant,1.2
+C00076,60+,8953,Agadir,Commerce,0.0
+C00077,26-35,4842,Rabat,Industrie,8.4
+C00078,18-25,6682,Casablanca,Services,12.7
+C00079,26-35,8639,Casablanca,Services,11.2
+C00080,18-25,5166,Agadir,Salarie prive,0.0
+C00081,46-60,7873,Casablanca,Salarie prive,8.4
+C00082,36-45,4255,Fes,Salarie prive,11.2
+C00083,26-35,5016,Casablanca,Industrie,3.7
+C00084,36-45,4964,Casablanca,Services,5.9
+C00085,36-45,3173,Agadir,Agriculture,0.0
+C00086,60+,8005,Casablanca,Salarie prive,6.6
+C00087,60+,4731,Casablanca,Services,1.2
+C00088,36-45,6166,Rabat,Commerce,6.3
+C00089,46-60,7978,Agadir,Services,0.0
+C00090,46-60,7829,Casablanca,Commerce,7.7
+C00091,36-45,8830,Casablanca,Salarie prive,9.6
+C00092,46-60,5801,Oujda,Salarie prive,2.4
+C00093,18-25,4852,Fes,Agriculture,1.0
+C00094,46-60,5861,Agadir,Fonction publique,0.0
+C00095,60+,2421,Tanger,Fonction publique,4.4
+C00096,18-25,2763,Fes,Fonction publique,3.2
+C00097,46-60,2959,Rabat,Fonction publique,0.0
+C00098,60+,3539,Casablanca,Agriculture,7.3
+C00099,26-35,7630,Fes,Salarie prive,3.7
+C00100,36-45,3722,Fes,Salarie prive,1.2

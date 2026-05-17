@@ -1,0 +1,86 @@
+networks:
+  credit-risk-net:
+    driver: bridge
+
+# Volumes partagés entre pipeline, API et dashboard
+volumes:
+  data-volume:
+  models-volume:
+
+services:
+
+  # ──────────────────────────────────────────────────────────────
+  # Pipeline : génère les données, entraîne le modèle, score.
+  # Se termine (exit 0) → API et Dashboard démarrent ensuite.
+  # ──────────────────────────────────────────────────────────────
+  pipeline:
+    build: .
+    command: python -m src.run_pipeline
+    volumes:
+      - data-volume:/app/data
+      - models-volume:/app/models
+    networks:
+      - credit-risk-net
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  # ──────────────────────────────────────────────────────────────
+  # API REST temps-réel (FastAPI + Uvicorn)
+  # http://localhost:8000        — scoring endpoint
+  # http://localhost:8000/docs   — Swagger UI
+  # ──────────────────────────────────────────────────────────────
+  api:
+    build: .
+    command: uvicorn src.api:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - data-volume:/app/data
+      - models-volume:/app/models
+    networks:
+      - credit-risk-net
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      pipeline:
+        condition: service_completed_successfully
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  # ──────────────────────────────────────────────────────────────
+  # Dashboard Streamlit
+  # http://localhost:8501
+  # ──────────────────────────────────────────────────────────────
+  dashboard:
+    build: .
+    command: >
+      streamlit run dashboard/app.py
+        --server.port 8501
+        --server.address 0.0.0.0
+        --server.headless true
+    ports:
+      - "8501:8501"
+    volumes:
+      - data-volume:/app/data
+      - models-volume:/app/models
+    networks:
+      - credit-risk-net
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      pipeline:
+        condition: service_completed_successfully
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8501/_stcore/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 25s
