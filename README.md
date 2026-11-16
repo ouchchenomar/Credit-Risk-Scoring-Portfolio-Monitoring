@@ -181,12 +181,13 @@ pytest tests/ -v
 
 | Métrique | Logistic Regression | Random Forest (sélectionné) |
 |----------|--------------------|-----------------------------|
-| AUC | 0.947 | **0.933** |
-| Recall | 0.946 | **0.900** |
-| F1-Score | 0.756 | **0.737** |
-| PR-AUC | 0.917 | **0.921** |
+| AUC | 0.926 | **0.933** |
+| Recall | 0.929 | **0.900** |
+| Precision | 0.330 | **0.407** |
+| F1-Score | 0.487 | **0.560** |
+| PR-AUC | 0.741 | **0.724** |
 
-> Le Random Forest est sélectionné sur l'AUC. Le seuil de décision est fixé à 0.25 pour maximiser le recall (détecter un maximum de vrais défauts).
+> Chiffres de `models/metrics.json`, produits par `src/train_model.py` sur le jeu de test (642 dossiers, 25 % des données, `random_state=42`). Le Random Forest est sélectionné sur l'AUC. Le seuil de décision est fixé à 0.25 pour maximiser le recall (détecter un maximum de vrais défauts).
 
 ---
 
